@@ -36,8 +36,7 @@ body{
 
 
 .container {
-    width: 400px;
-    height: 300px;
+    max-width: 400px;
     background-color: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -47,6 +46,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin: 10px;
     -webkit-box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
@@ -126,6 +126,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 7px;
 }
 
+.negativ-num-flag {
+    margin-top: 20px;
+}
+
 .negativ-num-flag:hover{
     -webkit-touch-callout: none; /* iOS Safari                           */
     -webkit-user-select: none; /* Safari                               */
@@ -148,6 +152,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 60px;
     height: 34px;
     transform: scale(0.8);
+    margin-top: 20px;
   }
   
   /* Hide default HTML checkbox */
@@ -206,10 +211,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
 .bg__image {
-    width: 130%;
+    width: 130vw;
+    width: 130vh;
     position: absolute;
     top: -6vh;
-    right: -8vw;
+    left: -8vw;
     opacity: 0.2;
     z-index: -1;
     transform: rotate(0deg);
