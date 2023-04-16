@@ -23,6 +23,8 @@ Application enable user increase and decrease number in range 0 to infinity. Neg
 - [ ] Update appearance
 - [ ] Add increase animations
 
+> images from [site](https://svgporn.com/#search=font%20aw)
+
 <br>
 
 ## 🔒 License
