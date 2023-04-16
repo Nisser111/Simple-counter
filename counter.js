@@ -7,7 +7,7 @@ const negativNumSwich = document.getElementById("negativ-num-flag");
 let counter = 0;
 
 negativNumSwich.addEventListener("change", () => {
-    if(negativNumSwich) {
+    if(document.getElementById("display").value < 0) {
         counter = 0;
         document.getElementById("display").value = counter;
     }
