@@ -1,26 +1,31 @@
 :root{
     box-sizing: border-box;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    --blue: #1488CC;
+    --darkblue: #363ff3;
 }
 
 body{
-    background: url(data/Skyline.jpg) no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--blue);
+    background: linear-gradient(to right top, var(--darkblue), var(--blue));
+    color: white;
     font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
     width: 400px;
     height: 300px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -37,10 +42,6 @@ button{
     background: none;
 }
 
-.rotate{
-    transform: rotate(180deg);
-}
-
 #display{
     font-size: 4rem;
     text-align: center;
@@ -49,14 +50,10 @@ button{
     border: none;
     cursor: text;
     width: 100%;
-    font-family: 'Roboto Mono', monospace;
-    color: black;
+    font-family: 'Roboto Mono', monospace;  
+    color: white;
 }
 
-#display:active,
-#display:focus{
-    outline: none;
-}
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -72,37 +69,40 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: space-around;
 }
 
-button {
-    width: 100px;
-    background-color: #cc5333;
-    cursor: pointer;
-    text-align: center;
+/* Buttnos style */
+.button {
     font-size: 2rem;
     color: white;
-    border-radius: 7px;
+    padding: 5px;
+    transition: transform .3s ease;
+    transform: rotate(0);
 }
 
-.plus_minus{
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 2.5rem;
+.button:hover {
+    cursor: pointer;
 }
 
-.reset{
-    background: none;
-    background: 
-    linear-gradient(white 0 0) padding-box, /*this is your grey background*/
-    linear-gradient(to right, #2B32B2, #1488CC) border-box;
-    color: black;
-    border: 5px solid transparent;
-    border-radius: 7px;
-    font-size: 1.7rem;
+.button:first-child:hover {
+    transform: translateY(-5px);
 }
 
-.fa-solid{
-    color: black;
+#reset:hover {
+    animation: rotate .25s ease-out;
 }
+
+.button:last-child:hover {
+    transform: translateY(5px);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
 
 .neg-null-container{
     font-family: 'Lato', 'Sans-serif';
