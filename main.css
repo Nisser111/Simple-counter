@@ -1,0 +1,144 @@
+:root{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background: url(data/Skyline.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 20px -2px rgba(66, 68, 90, 1);
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+#display{
+    font-size: 4rem;
+    text-align: center;
+    padding: 30px 0;
+    background: none;
+    border: none;
+    cursor: text;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+#display:active,
+#display:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 100px;
+    background-color: #cc5333;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    border-radius: 7px;
+}
+
+.plus_minus{
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 2.5rem;
+}
+
+.reset{
+    background: none;
+    background: 
+    linear-gradient(white 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to right, #2B32B2, #1488CC) border-box;
+    color: black;
+    border: 5px solid transparent;
+    border-radius: 7px;
+    font-size: 1.7rem;
+}
+
+.fa-solid{
+    color: black;
+}
+
+.neg-null-container{
+    font-family: 'Lato', 'Sans-serif';
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.negativ-num-flag:hover{
+    -webkit-touch-callout: none; /* iOS Safari                           */
+    -webkit-user-select: none; /* Safari                               */
+    -khtml-user-select: none; /* Konqueror HTML                       */
+    -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
+    -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
+    user-select: none;
+    cursor: pointer;
+}
+
+#negativ-num-flag{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Lato', 'Sans-serif';
+}
+
+footer p{
+    margin: 5px auto;
+}

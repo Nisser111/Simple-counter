@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple counter</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta charset="Author" content="Miłosz Kułak">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css' integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==' crossorigin='anonymous'/>
+</head>
+<body>
+    <div class="container">
+        <input id="display" value="0" type="number" disabled>
+        <div class="buttons">
+            <button id="increment" class="plus_minus">+</button>
+            <button id="reset" class="reset"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button id="decrement" class="plus_minus">-</button>
+        </div>
+        <div class="neg-null-container">
+            <input type="checkbox" name="negativ-num" id="negativ-num-flag" class="negativ-num-flag">
+            <label for="negativ-num-flag" class="negativ-num-flag">Allow negativ numbers</label>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+
+    <footer>
+        <p>Created by Miłosz Kułak</p>
+    </footer>
+</body>
+</html>
+
+<!--
+             █▄████─█▄████─█▄████
+         ▀▀─▄█▀─▀▀─▄█▀─▀▀─▄█▀
+         ──▄██────▄██────▄██
+         ─▄██▀───▄██▀───▄██▀
+         ─███────███────███ 
+
+ █▀▀ █▀█ █▀▄ █▀▀   █▄▄ █▄█   █▀▄▀█ █▄▀
+ █▄▄ █▄█ █▄▀ ██▄   █▄█  █    █ ▀ █ █ █
+-->
