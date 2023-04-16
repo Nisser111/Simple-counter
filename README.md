@@ -13,7 +13,7 @@ Application enable user increase and decrease number in range 0 to infinity. Neg
 
 ## 🔎 Used languages and tools:
 
-<img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/html-5.svg" alt="HTML 5" width="50" height="50"><img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/css-3.svg" alt="CSS 3" width="50" height="50"><img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/javascript.svg" alt="JavaScript" width="50" height="50">
+<img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/html-5.svg" alt="HTML 5" width="50" height="50"><img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/css-3.svg" alt="CSS 3" width="50" height="50"><img src="https://raw.githubusercontent.com/Nisser111/tools-and-technologies-logos/ce7367d3e420fc84752bec0760e8a53a884fd58e/javascript.svg" alt="JavaScript" width="50" height="50"><img src="https://cdn.svgporn.com/logos/font-awesome.svg" alt="Font awsome" width="50" height="50">
 
 <br>
 
